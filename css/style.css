@@ -19,3 +19,9 @@ div{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12pt;
 }
+
+.nav {
+    font-size: 1.5em;
+    padding: 1%;
+    color: deeppink;
+}
