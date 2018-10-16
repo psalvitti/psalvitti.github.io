@@ -2,146 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Mineral List</title>
-    <meta name="description" content="list of minerals">
-    <meta name="keyword" content="minerals, lists, inline styling">
-    <meta name="author" content="Peter S.">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Mineral List</title>
+	<meta name="description" content="list of minerals">
+	<meta name="keyword" content="minerals, lists, inline styling">
+	<meta name="author" content="Peter S.">
 
-    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"> -->
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
 
-    <style>
-        body {
-            background-color: grey;
-        }
+	<style>
+		body {
+			background-color: grey;
+		}
 
-        h1 {
-            text-align: center;
-            color: gold;
-        }
+		h1 {
+			text-align: center;
+			color: gold;
+		}
 
-        ul {
-            /* border: 1px solid red; */
+		ul {
+			/* border: 1px solid red;
             padding-top: 5%;
-        }
+            */
+		}
 
-        ol {
-            /* border: 1px dashed orange; */
-            padding-top: 0%;
-            margin-bottom: 5%;
-            margin-left: 2%
-        }
+		ol {
+			/* border: 1px dashed orange; */
+			/*			padding-top: 0%;
+			margin-bottom: 5%;
+			margin-left: 2%
+*/
+		}
 
-        ul li {
-            color: gold;
-            font-size: 1.5em;
-        }
+		ul li {
+			/*			color: gold;
+			font-size: 1.5em;
+*/
+		}
 
-        ol li {
-            color: white;
-            font-size: 1.3em;
-            line-height: 1.4;
-        }
+		ol li {
+			/*			color: white;
+			font-size: 1.3em;
+			line-height: 1.4;
+*/
+		}
 
-        figcaption {
-            color: white;
-            font-style: italic;
-        }
-    </style>
+		figcaption {
+			/*			color: white;
+			font-style: italic;
+*/
+		}
+
+		footer {
+			display: flex;
+			padding: 10px 5px;
+			background-color: #45a1ff;
+			color: #fff;
+		}
+
+		footer p {
+			flex: 1;
+			margin: 0;
+		}
+
+	</style>
 </head>
 
 <body>
-    <h1>Mineral Classes and Examples</h1>
-    <hr>
-    <ul>
-        <li>Silicates:
-            <figure>
-                <img src="img/quartz.jpg" alt="quartz picture" width="300">
-                <figcaption>Quartz is an example of the Silicates mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Olivine</li>
-            <li>Pyroxene</li>
-            <li>Amphibole</li>
-            <li>Biotite</li>
-            <li>Muscovite</li>
-            <li>Plagioclase</li>
-            <li>Orthoclase</li>
-            <li>Quartz</li>
-        </ol>
-        <li>Oxides:
-            <figure>
-                <img src="img/hematite.jpg" alt="hematite picture" width="300">
-                <figcaption>Hematite is an example of the Oxides mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Hematite</li>
-            <li>Limonite</li>
-        </ol>
-        <li>Sulfates:
-            <figure>
-                <img src="img/gypsum.jpg" alt="gypsum picture" width="300">
-                <figcaption>Gypsum is an example of the Sulfates mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Gypsum</li>
-            <li>Barite</li>
-        </ol>
-        <li>Sulfides:
-            <figure>
-                <img src="img/galena.jpg" alt="galena picture" width="300">
-                <figcaption>Galena is an example of the Sulfides mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Galena</li>
-            <li>Pyrite</li>
-        </ol>
-        <li>Carbonates:
-            <figure>
-                <img src="img/calcite.jpg" alt="calcite picture" width="300">
-                <figcaption>Calcite is an example of the Carbonates mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Calcite</li>
-            <li>Dolomite</li>
-        </ol>
-        <li>Native Elements:
-            <figure>
-                <img src="img/gold.jpg" alt="gold picture" width="300">
-                <figcaption>Gold is an example of the Native Elements mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Gold</li>
-            <li>Diamond</li>
-        </ol>
-        <li>Halides:
-            <figure>
-                <img src="img/halite.jpg" alt="halite picture" width="300">
-                <figcaption>Halite is an example of the Halides mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Halite</li>
-            <li>Fluorite</li>
-        </ol>
-        <li>Phosphates:
-            <figure>
-                <img src="img/apatite.jpg" alt="apatite picture" width="300">
-                <figcaption>Apatite is an example of the Phosphates mineral class.</figcaption>
-            </figure>
-        </li>
-        <ol>
-            <li>Apatite</li>
-            <li>Wavellite</li>
-        </ol>
-    </ul>
+	<h1>Mineral Classes and Examples</h1>
+	<nav>
+		<ol>
+			<li><a href="mineral_home.html">Mineral Home</a></li>
+			<li><a href="mineral_list.html">Mineral Classes</a></li>
+			<li><a href="mineral_properties.html">Mineral Properties</a></li>
+		</ol>
+	</nav>
+	<hr>
+	<ul>
+		<li>Silicates:
+			<figure>
+				<img src="img/quartz.jpg" alt="quartz picture" width="300">
+				<figcaption>Quartz is an example of the Silicates mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Olivine</li>
+			<li>Pyroxene</li>
+			<li>Amphibole</li>
+			<li>Biotite</li>
+			<li>Muscovite</li>
+			<li>Plagioclase</li>
+			<li>Orthoclase</li>
+			<li>Quartz</li>
+		</ol>
+		<li>Oxides:
+			<figure>
+				<img src="img/hematite.jpg" alt="hematite picture" width="300">
+				<figcaption>Hematite is an example of the Oxides mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Hematite</li>
+			<li>Limonite</li>
+		</ol>
+		<li>Sulfates:
+			<figure>
+				<img src="img/gypsum.jpg" alt="gypsum picture" width="300">
+				<figcaption>Gypsum is an example of the Sulfates mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Gypsum</li>
+			<li>Barite</li>
+		</ol>
+		<li>Sulfides:
+			<figure>
+				<img src="img/galena.jpg" alt="galena picture" width="300">
+				<figcaption>Galena is an example of the Sulfides mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Galena</li>
+			<li>Pyrite</li>
+		</ol>
+		<li>Carbonates:
+			<figure>
+				<img src="img/calcite.jpg" alt="calcite picture" width="300">
+				<figcaption>Calcite is an example of the Carbonates mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Calcite</li>
+			<li>Dolomite</li>
+		</ol>
+		<li>Native Elements:
+			<figure>
+				<img src="img/gold.jpg" alt="gold picture" width="300">
+				<figcaption>Gold is an example of the Native Elements mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Gold</li>
+			<li>Diamond</li>
+		</ol>
+		<li>Halides:
+			<figure>
+				<img src="img/halite.jpg" alt="halite picture" width="300">
+				<figcaption>Halite is an example of the Halides mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Halite</li>
+			<li>Fluorite</li>
+		</ol>
+		<li>Phosphates:
+			<figure>
+				<img src="img/apatite.jpg" alt="apatite picture" width="300">
+				<figcaption>Apatite is an example of the Phosphates mineral class.</figcaption>
+			</figure>
+		</li>
+		<ol>
+			<li>Apatite</li>
+			<li>Wavellite</li>
+		</ol>
+	</ul>
+	<footer>
+		<p>Adopted from Geology.com</p>
+	</footer>
 </body>
 
 </html>
