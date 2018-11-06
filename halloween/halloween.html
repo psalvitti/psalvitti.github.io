@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Peter Salvitti">
+	<title>Halloween Assignment</title>
+
+	<style>
+		body {
+			background-image: url("./img/pumpkin.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			color: white;
+		}
+		h1 {
+			font-size: 4em;
+		}
+		h3 {
+			font-size: 2em; 
+			margin-bottom: 0;
+		}
+		table {
+			table-layout: fixed;
+		}
+		td {
+			width: calc(100%/2);
+			text-align: left;
+		}
+		tr {
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>Halloween Sounds</h1>
+	<table width="520">
+		<tr class="row-a">
+			<th width="275">
+				<h3>Sound Effect</h3>
+			</th>
+			<th width="60">
+				<h3>Listen</h3>
+			</th>
+		</tr>
+		<tr class="row-b">
+			<td>
+				<h3>Rain Storm</h3>
+			</td>
+			<td>
+				<audio controls>
+					<source src="./audio/rainStorm.mp3" type="audio/mpeg">
+					<source src="./audio/rainStorm.ogg" type="audio/ogg">
+					<source src="./audio/rainStorm.wav" type="audio/wav">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Werewolf</h3>
+			</td>
+			<td>
+				<audio controls>
+					<source src="./audio/werewolf.mp3" type="audio/mp3">
+				</audio>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Witches Cackle</h3>
+			</td>
+			<td>
+				<audio controls>
+					<source src="./audio/witchesCackle.mp3" type="audio/mp3">
+				</audio>
+			</td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
