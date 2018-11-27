@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Forms Survey</title>
+	<meta name="description" content="forms in-class assignment">
+	<meta name="keyword" content="forms, lists, inline styling">
+	<meta name="author" content="Peter S.">
+
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+	<style type="text/css">
+		/* reset button style */
+		button {
+			padding: 0;
+			border: none;
+			font: inherit;
+			color: inherit;
+			background-color: transparent;
+			/* show a hand cursor on hover; some argue that we
+  should keep the default arrow cursor for buttons */
+			cursor: pointer;
+		}
+
+		body {
+			font-size: 1.3em;
+			background-color: beige;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		/* Padding for containers */
+		.container {
+			padding: 16px;
+			/* background-color: white; */
+		}
+
+		content {
+			width: 90%;
+			margin: auto;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		form {
+			margin-left: 5%;
+		}
+
+		input[type=text] {
+			width: 100%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			/* margin-bottom: 2%; */
+		}
+
+		input[type=submit], input[type=button] {
+			border: 1px solid #f44c0e;
+			background: #33ff99;
+			font-weight: bold;
+			padding: 10px 20px;
+			border-radius: 3px;
+		}
+
+		input[type=submit]:hover, input[type=button]:hover {
+			background: #f44c03;
+		}
+
+		select option {
+			font-size: 1.75em;
+			width: 150px;
+		}
+
+		label,
+		textarea {
+			letter-spacing: 1px;
+		}
+
+		textarea {
+			padding: 10px;
+			line-height: 1.5;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-shadow: 1px 1px 1px #999;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h3>Music Survey</h3>
+	<hr>
+	<form id="survey" action="https://idesstage2.bc.edu/class/results.php" method="POST">
+		<div class="container">
+			<label for="fname"><b>First Name:</b></label>
+			<input type="text" placeholder="enter first name" fname="fname" required><br>
+
+			<label for="lname"><b>Last Name:</b></label>
+			<input type="text" placeholder="enter last name" lname="lname" required><br>
+
+			<label for="email"><b>Email:</b></label>
+			<input type="text" placeholder="enter email" email="email" required><br>
+
+			<fieldset>
+				<legend>&nbsp;Select Your Favorite Type of Music:&nbsp;</legend>
+				<input type="checkbox" id="cb1" value="Pop" />
+				<label for="cb1">Pop</label><br />
+
+				<input type="checkbox" id="cb2" value="Classical" />
+				<label for="cb2">Classical</label><br />
+
+				<input type="checkbox" id="cb3" value="Rock" />
+				<label for="cb3">Rock</label><br />
+
+				<input type="checkbox" id="cb4" value="Folk" />
+				<label for="cb4">Folk</label><br />
+
+				<input type="checkbox" id="cb5" value="Rap" />
+				<label for="cb5">Rap</label><br />
+
+				<input type="checkbox" id="cb6" value="Other" />
+				<label for="cb6>">Other</label><br />
+			</fieldset><br>
+			<fieldset>
+				<legend>&nbsp;How Often Do You Purchase CDs?&nbsp;</legend>
+				<input type="checkbox" id="cb7" value="Weekly" />
+				<label for="cb7">Weekly</label><br />
+
+				<input type="checkbox" id="cb8" value="A few per year" />
+				<label for="cb8">A few per year</label><br />
+
+				<input type="checkbox" id="cb9" value="Monthly" />
+				<label for="cb9">Monthly</label><br />
+
+				<input type="checkbox" id="cb10" value="Yearly" />
+				<label for="cb10">Yearly</label><br />
+			</fieldset>
+			<h3>Select the location you listen to music to:</h3>
+			<select>
+				<option value="home">At Home</option>
+				<option value="work">At Work</option>
+				<option value="school">At School</option>
+				<option value="commute">Commuting</option>
+			</select>
+			<h3>
+				<label for="role">What role does music play in your life?:</label>
+			</h3>
+			<textarea id="role" rows="5" cols="30"></textarea>
+
+			<br><br>
+			<input type="submit" value="send survey">
+			<input type="button" onclick="clrForm()" value="reset survey">
+
+			<script>
+				function clrForm() {
+					document.getElementById("survey").reset();
+				}
+
+			</script>
+
+		</div>
+	</form>
+
+</body>
+
+</html>
