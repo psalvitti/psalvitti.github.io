@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="css/project-style.css">
 
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet"> -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
 	 rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700,900' rel='stylesheet' type='text/css'>
@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body onload="clearform()">
 	<!--wrapper start-->
 	<div class="wrapper" id="wrapper">
 
@@ -54,7 +54,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="heading text-center">
-							<a href="https://www.bc.edu"><img class="dividerline" src="img/bc-sep.png" alt="BC"/></a>
+							<a href="https://www.bc.edu"><img class="dividerline" src="img/bc-sep.png" alt="BC" /></a>
 							<h2>About Me</h2>
 							<img class="dividerline" src="img/bc-sep.png" alt="">
 
@@ -73,16 +73,16 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="heading text-center">
-							<a href="https://www.bc.edu"><img class="dividerline" src="img/bc-sep.png" alt="BC"/></a>
+							<a href="https://www.bc.edu"><img class="dividerline" src="img/bc-sep.png" alt="BC" /></a>
 							<h2>Links, Links, and more Links</h2>
 							<img class="dividerline" src="img/bc-sep.png" alt="">
 
 							<h3>In the beginning there <i>was</i> a well-known, social bookmarking site called
 								<mark>Del.icio.us</mark>. It was, well, delicious! Seriously, it provided a free,
-								easy-to-use service to save, organize, and discover the links you like on the Internet.<br>
+								easy-to-use service to save, organize, and discover the links you like on the Internet.
 								What's the big deal you say? Well, it was simple way to classify and organize links
 								you found interesting in a way that made sense to an individual.<br>
-								This is an attempt to recreate a poor-mans version of that venerable service.
+								<a href="http://localhost:3000/" target="_blank">This is a poor-man's attempt to recreate that venerable service.</a>
 							</h3>
 						</div>
 					</div>
@@ -153,7 +153,7 @@
 			<div class="container mx-width">
 				<div class="row">
 					<div class="col-md-12">
-						<form>
+						<form name="myform" action="https://idesstage2.bc.edu/class/results.php" method="POST">
 							<fieldset class="form-group">
 								<input type="text" class="form-control" id="Name" placeholder="Your Name">
 							</fieldset>
@@ -197,6 +197,14 @@
 	<!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" language="javascript">
+		/* Clear the form on load */
+		function clearform() {
+			document.myform.reset();
+		}
+
+	</script>
 
 </body>
 
