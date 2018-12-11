@@ -1,39 +1,220 @@
+<!-- DOCTYPE -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ADIT134001 | P Salvitti</title>
+	<title>Personal Lander, powered by: Boostrap 4</title>
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
 
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="author" content="Sam Norton">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/project-style.css">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+	 rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
-    <main>
-        <div class="intro">Hello, and welcome to ADIT-134001!</div>
-        <div class="tagline">HTML5 Web Programming | Stylesheets | Other general hackery</div>
+	<!--wrapper start-->
+	<div class="wrapper" id="wrapper">
 
-        <!-- Get your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-        <div class="icons-social">
-            <a target="_blank" href="https://github.com/psalvitti"><i class="fab fa-github"></i></a>
-            <a target="_blank" href="https://twitter.com/psalvitti"><i class="fab fa-twitter"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/psalvitti"><i class="fab fa-linkedin"></i></a>
-            <a target="_blank" href="https://medium.com/@psalvitti"><i class="fab fa-medium"></i></a>
-            <a target="_blank" href="https://www.freecodecamp.org"><i class="fab fa-free-code-camp"></i></a>
-        </div>
-    </main>
+		<!-- nav
 
-    <a class="btn" href="#lessons">Weekly Lessons</a>
+		-->
 
-    <p>
-        <a name="lessons">Week #1: Personal Statement</a>
-    </p>
+		<!--header-->
+		<header>
+
+			<div class="jumbotron jumbotron-fluid" id="banner">
+				<div class="parallax text-center" style="background-image: url(img/me-office-cover.jpg);">
+					<div class="parallax-pattern-overlay">
+						<div class="container text-center" id="size-banner">
+							<a href="https://getbootstrap.com/"><img id="site-title" src="img/logo.png" alt="logo" /></a>
+							<h2 class="display-2">Personal Lander of: P. Salvitti)</h2>
+							<h3 class="learn"><i>powered by: Bootstrap 4!</i></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!--about us-->
+		<section class="aboutus" id="aboutus">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="heading text-center">
+							<img class="dividerline" src="img/bc-sep.png" alt="">
+							<h2>About Me</h2>
+							<img class="dividerline" src="img/bc-sep.png" alt="">
+
+							<h3>Well, I'm not from around here! I am originally from Italy and I dabble in many
+								things: I'm a hands-on technologist and software developer/designer; I'm a chef-in-training;
+								I'm a self-avowed WDW ninja ... not afraid to admit it! If it involves <i>any</i> technology
+								in the past 35+ years, chances are I've taken a <i>byte</i> 🙁 out of it.<br><br>
+								I am Currently the Chief Technologist at Boston 🦅 College reporting to the VP/CIO CTO of
+								Information Technology Services (ITS); I help set strategic technology direction and guide ITS
+								with R&D efforts at the University. My particular focus is on scalability + efficiency through
+								architecture simplification; faculty, student & staff insights via analytics and mobility;
+								rationalizing the technology & application portfolio; and cloud + virtualization strategy</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="heading text-center">
+							<img class="dividerline" src="img/bc-sep.png" alt="">
+							<h2>Links, Links, and more Links</h2>
+							<img class="dividerline" src="img/bc-sep.png" alt="">
+
+							<h3>In the beginning there <i>was</i> a well-known, social bookmarking site called
+								<mark>Del.icio.us</mark>. It was, well, delicious! Seriously, it provided a free,
+								easy-to-use service to save, organize, and discover the links you like on the Internet.<br>
+								What's the big deal you say? Well, it was simple way to classify and organize links
+								you found interesting in a way that made sense to an individual.<br>
+								This is an attempt to recreate a poor-mans version of that venerable service.
+							</h3>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card card-inverse card-info text-center">
+							<img class="card-img-top" src="https://api.letsvalidate.com/v1/thumbs?url=www.google.com&size=og" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Google</h4>
+								<p class="card-text">Go to: Google.com</p>
+								<a href="https://www.google.com" class="btn btn-primary">Google</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card card-inverse card-info text-center">
+							<img class="card-img-top" src="https://api.letsvalidate.com/v1/thumbs?url=bc.edu&size=og" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">Boston College</h4>
+								<p class="card-text">Go to: Boston College</p>
+								<a href="https://bc.edu" class="btn btn-primary">Boston College</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card card-inverse card-info text-center">
+							<img class="card-img-top" src="https://api.letsvalidate.com/v1/thumbs?url=amazon.com&size=og" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">amazon</h4>
+								<p class="card-text">Go to: Amazon.com</p>
+								<a href="https://www.amazon.com" class="btn btn-primary">Amazon</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="card card-inverse card-info text-center">
+							<img class="card-img-top" src="https://api.letsvalidate.com/v1/thumbs?url=bcservices.bc.edu&size=og" alt="Card image cap">
+							<div class="card-block">
+								<h4 class="card-title">BC Service Catalog</h4>
+								<p class="card-text">Go to: BC Service Catalog</p>
+								<a href="https://bcservices.bc.edu" class="btn btn-primary">BC Service Catalog</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!--Contact Us-->
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="heading">
+							<img class="dividerline" src="img/sep.png" alt="">
+							<h2>Contact Me! 📩</h2>
+							<img class="dividerline" src="img/sep.png" alt="">
+							<h3>Feel free to reach out if you have any questions!
+							</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container mx-width">
+				<div class="row">
+					<div class="done">
+						<div class="alert alert-success">
+							<button type="button" class="close" data-dismiss="alert">×</button>
+							Your message has been sent. Thank you!
+						</div>
+					</div>
+
+					<div class="col-md-12">
+						<form>
+							<fieldset class="form-group">
+								<input type="text" class="form-control" id="Name" placeholder="Name">
+							</fieldset>
+
+							<fieldset class="form-group">
+								<input type="email" class="form-control" id="Email" placeholder="Email">
+							</fieldset>
+
+							<fieldset class="form-group">
+								<textarea class="form-control" rows="3" placeholder="Message"></textarea>
+							</fieldset>
+
+							<button type="submit" class="contact submit">Submit</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!--footer-->
+		<section class="footer" id="footer">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul>
+							<li><a href="https://github.com/psalvitti"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://twitter.com/psalvitti"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/psalvitti"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://medium.com/@psalvitti"><i class="fa fa-medium"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<!--wrapper end-->
+
+	<!-- JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+
+	</script>
+
 </body>
+
 </html>
